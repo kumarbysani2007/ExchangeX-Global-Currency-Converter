@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080b16">
+    <title>ExchangeX | Global Currency Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="navbar">
+        <a href="#" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </span>
+            Exchange<span class="logo-x">X</span>
+        </a>
+
+        <div class="live-status">
+            <span class="status-dot"></span>
+            Global Currency Converter
+        </div>
+    </header>
+
+    <main class="main-container">
+
+        <section class="hero">
+            <div class="eyebrow">
+                <i class="fa-solid fa-globe"></i>
+                GLOBAL CURRENCY EXCHANGE
+            </div>
+
+            <h1>
+                Exchange money.<br>
+                <span>Explore the world.</span>
+            </h1>
+
+            <p>
+                Convert currencies easily with the latest available
+                reference exchange rates from around the world.
+            </p>
+        </section>
+
+        <section class="converter-card">
+
+            <div class="card-heading">
+                <div>
+                    <h2>Currency Converter</h2>
+                    <p>Choose currencies and enter an amount</p>
+                </div>
+
+                <div class="card-icon">
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+            </div>
+
+            <form>
+                <div class="amount">
+                    <label for="amount">Amount</label>
+
+                    <div class="input-wrapper">
+                        <span class="currency-symbol">$</span>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            value="1"
+                            min="0.01"
+                            step="any"
+                            placeholder="Enter amount"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="conversion-area">
+
+                    <div class="dropdown from">
+                        <label for="from-currency">From</label>
+
+                        <div class="currency-box">
+                            <img src="https://flagsapi.com/US/flat/64.png" alt="From currency flag">
+
+                            <div class="select-container">
+                                <select name="from" id="from-currency"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exchange-icon">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+
+                    <div class="dropdown to">
+                        <label for="to-currency">To</label>
+
+                        <div class="currency-box">
+                            <img src="https://flagsapi.com/IN/flat/64.png" alt="To currency flag">
+
+                            <div class="select-container">
+                                <select name="to" id="to-currency"></select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="result-box">
+                    <div class="result-label">
+                        <i class="fa-solid fa-chart-line"></i>
+                        CONVERSION RESULT
+                    </div>
+
+                    <p class="msg" aria-live="polite">
+                        Loading supported currencies...
+                    </p>
+                </div>
+
+                <button type="submit">
+                    Get Exchange Rate
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="card-footer">
+                <i class="fa-solid fa-shield-halved"></i>
+                Simple, fast and reliable currency conversion
+            </div>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+
+                <div>
+                    <h3>Fast Conversion</h3>
+                    <p>Quick currency calculations</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+
+                <div>
+                    <h3>Global Currencies</h3>
+                    <p>Multiple supported currencies</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div>
+                    <h3>Exchange Rate API</h3>
+                    <p>Powered by Frankfurter</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 ExchangeX. Built for seamless currency conversion.</p>
+    </footer>
+
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
